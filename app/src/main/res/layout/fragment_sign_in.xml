@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="8dp"
+    android:orientation="vertical">
+    <android.support.design.widget.TabLayout
+        android:layout_marginTop="10dp"
+        app:tabTextColor="@color/white50"
+        app:tabSelectedTextColor="@color/white"
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:tabMode="scrollable" />
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="62dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="191dp" />
+
+    <Button
+            android:id="@+id/signIn"
+            android:layout_marginLeft="48dp"
+            android:layout_marginRight="48dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/buttonshapewhitebg"
+            android:fontFamily="@font/calibri"
+            android:text="登   录"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textColor="#96ffffff"
+            android:textSize="16dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/calibri"
+        android:text="忘记密码？"
+        android:textAlignment="center"
+        android:textColor="#96ffffff"
+        android:textSize="12sp" />
+
+</LinearLayout>

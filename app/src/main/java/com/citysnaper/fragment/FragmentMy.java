@@ -15,11 +15,12 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.citysnaper.R;
 import com.citysnaper.activity.MyEditPage;
+import com.citysnaper.activity.SignInOrUp;
 
 import butterknife.OnClick;
 
 public class FragmentMy extends Fragment  {
-    ImageView profile_image;
+    ImageView profile_image,addPeople,setting;
     TextView myName;
     Button myEdit;
     String m1Adress = "https://img1.doubanio.com/view/celebrity/s_ratio_celebrity/public/p1949.webp";
@@ -31,6 +32,8 @@ public class FragmentMy extends Fragment  {
         profile_image = view.findViewById(R.id.profile_image);
         myName = view.findViewById(R.id.my_name);
         myEdit = view.findViewById(R.id.my_edit);
+        addPeople = view.findViewById(R.id.my_add_people);
+        setting = view.findViewById(R.id.my_setting);
 
         Glide.with(this).load(m1Adress).into(profile_image);
         myEdit.setOnClickListener(new View.OnClickListener() {
@@ -40,6 +43,14 @@ public class FragmentMy extends Fragment  {
                 startActivity(mIntent);
             }
         });
+        addPeople.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                 startActivity(new Intent(getActivity(), SignInOrUp.class));
+            }
+        });
+
+
         return view;
     }
 
