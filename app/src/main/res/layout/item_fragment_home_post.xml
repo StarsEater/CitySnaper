@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout
+    android:paddingTop="6dp"
+    android:id="@+id/author_ly"
+    android:paddingRight="12dp"
+    android:paddingLeft="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+ <de.hdodenhof.circleimageview.CircleImageView
+     android:id="@+id/avator_image"
+     android:layout_width="50dp"
+     android:layout_height="50dp" />
+ <TextView
+     android:id="@+id/author_name"
+     android:layout_gravity="center_vertical"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="18sp"
+     android:layout_marginLeft="10dp"
+     android:text="Christima"/>
+<ImageView
+    android:id="@+id/more_action"
+    android:layout_gravity="center_vertical"
+    android:src="@drawable/more"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:layout_marginLeft="140dp"/>
+
+
+
+</LinearLayout>
+<ImageView
+    android:layout_marginTop="10dp"
+    android:id="@+id/travel_picture"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+<LinearLayout
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="18dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+<ImageView
+    android:id="@+id/good"
+    android:layout_width="20dp"
+    android:layout_height="20dp"
+    android:src="@drawable/good"/>
+ <ImageView
+     android:id="@+id/comment"
+     android:layout_marginLeft="18dp"
+     android:layout_width="20dp"
+     android:layout_height="20dp"
+     android:src="@drawable/ic_comment_black_24dp"/>
+ <ImageView
+     android:id="@+id/send"
+     android:layout_width="20dp"
+     android:layout_height="20dp"
+     android:layout_marginLeft="18dp"
+     android:src="@drawable/ic_send_black_24dp"/>
+ <ImageView
+     android:id="@+id/bookmark"
+     android:layout_width="20dp"
+     android:layout_height="20dp"
+     android:src="@drawable/bookmark"
+     android:layout_marginLeft="180dp"/>
+</LinearLayout>
+ <TextView
+     android:id="@+id/like_num"
+     android:layout_marginTop="12dp"
+     android:paddingLeft="12dp"
+     android:textSize="16sp"
+     android:textColor="@color/colorAccent"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="1222,2次赞 "/>
+<com.citysnaper.view.ShowAllTextView
+    android:id="@+id/article_content"
+    android:layout_marginTop="8dp"
+    android:paddingLeft="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textSize="14sp"
+    android:lines="4"
+    android:ellipsize="end"
+    android:text="布局文件中这样设置即可：
+XML/HTML代码
+android:textStyle=\\\bold
+
+
+中文字体加粗：
+
+TextView textView= new TextView(context);//或从xml导入
+TextPaint paint = textView.getPaint();
+paint.setFakeBoldText(true);"/>
+<TextView
+    android:id="@+id/comment_num"
+     android:textSize="16sp"
+     android:layout_marginTop="8dp"
+     android:paddingLeft="12dp"
+     android:textColor="#b0bec5"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="所有200条评论"/>
+ <TextView
+     android:id="@+id/time"
+     android:textSize="12sp"
+     android:layout_marginTop="12dp"
+     android:paddingLeft="12dp"
+     android:textColor="@color/colorPrimaryDark"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:text="10小时前"/>
+</LinearLayout>

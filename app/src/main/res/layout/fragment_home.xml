@@ -41,7 +41,7 @@
                     android:layout_width="38dp"
                     android:layout_height="28dp"
                     android:layout_gravity="right"
-                    android:src="@drawable/right_plane"/>
+                    android:src="@drawable/ic_send_black_24dp"/>
 
 
             </android.support.v7.widget.Toolbar>
@@ -51,96 +51,13 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <LinearLayout
-                app:layout_constraintTop_toBottomOf="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-                <LinearLayout
-                    android:layout_marginTop="8dp"
-                    android:layout_marginBottom="24dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="12dp"
-                        android:paddingLeft="16dp"
-                        android:layout_gravity="center_horizontal">
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/city_choose"
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="@dimen/height_in_home_image" />
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/tourism_strategy"
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="@dimen/height_in_home_image"
-                            android:layout_marginLeft="@dimen/height_in_home_image_left"
-                            />
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/tourism_helper"
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="@dimen/height_in_home_image"
-                            android:layout_marginLeft="@dimen/height_in_home_image_left"
-                            />
-                        <de.hdodenhof.circleimageview.CircleImageView
-                            android:id="@+id/business_travel_services"
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="@dimen/height_in_home_image"
-                            android:layout_marginLeft="@dimen/height_in_home_image_left"/>
 
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:paddingLeft="26dp"
-                        android:orientation="horizontal">
-                        <TextView
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="16dp"
-                            android:textSize="12sp"
-                            android:layout_gravity="center"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:text="城市选择"/>
-                        <TextView
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="16dp"
-                            android:textSize="12sp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="@dimen/height_in_home_image_left"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:text="旅行攻略"/>
-                        <TextView
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="16dp"
-                            android:textSize="12sp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="@dimen/height_in_home_image_left"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:text="旅行助手"/>
-                        <TextView
-                            android:layout_width="@dimen/height_in_home_image"
-                            android:layout_height="16dp"
-                            android:textSize="12sp"
-                            android:layout_gravity="center"
-                            android:layout_marginLeft="@dimen/height_in_home_image_left"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:text="商旅服务"/>
-                    </LinearLayout>
-                </LinearLayout>
-                <TextView
-                android:layout_marginTop="8dp"
-                android:layout_width="match_parent"
-                android:layout_height="2dp"
-                android:background="@color/divider"/>
-                <android.support.v7.widget.RecyclerView
+                <com.citysnaper.view.GloriousRecyclerView
+                    android:id="@+id/fragment_home_rl"
                     android:layout_marginTop="42dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
-                </android.support.v7.widget.RecyclerView>
-            </LinearLayout>
+                </com.citysnaper.view.GloriousRecyclerView>
         </android.support.v4.widget.SwipeRefreshLayout>
     </android.support.design.widget.CoordinatorLayout>
 </android.support.constraint.ConstraintLayout>
