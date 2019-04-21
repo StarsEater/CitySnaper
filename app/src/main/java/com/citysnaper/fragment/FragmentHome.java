@@ -1,6 +1,5 @@
 package com.citysnaper.fragment;
 
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -9,22 +8,17 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.GridLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.GridLayout;
 import android.widget.ImageView;
 
 
 import com.bumptech.glide.Glide;
 import com.citysnaper.R;
 import com.citysnaper.adapter.ArticlePostAdapter;
-import com.citysnaper.bean.ArticlePost;
+import com.citysnaper.bean.ArticlePostBean;
 import com.citysnaper.view.GloriousRecyclerView;
 
 import java.util.ArrayList;
@@ -43,7 +37,7 @@ public class FragmentHome extends Fragment {
     ArticlePostAdapter articlePostAdapter;
 
 
-    private ArrayList<ArticlePost> articlePostsList= new ArrayList<>();
+    private ArrayList<ArticlePostBean> articlePostsList= new ArrayList<>();
     private String TAG = "FragmentHome";
 
     @Nullable
@@ -71,9 +65,9 @@ public class FragmentHome extends Fragment {
         Glide.with(this).load(p2Adress).into(tourism_strategy);
         Glide.with(this).load(p3Adress).into(tourism_helper);
         Glide.with(this).load(p4Adress).into(business_travel_services);
-
-
         ((AppCompatActivity) getActivity()).setSupportActionBar(toolbar);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setDisplayShowTitleEnabled(false);
+        //
 
 
         swipeRefreshLayout.setColorSchemeResources(R.color.colorPrimaryDark);
@@ -100,7 +94,7 @@ public class FragmentHome extends Fragment {
     }
     void initData(){
        for (int i = 0; i < 20; i++){
-           ArticlePost tmp = new ArticlePost();
+           ArticlePostBean tmp = new ArticlePostBean();
            tmp.avatarImageUrl = p1Adress;
            tmp.travelPictureUrl = p2Adress;
            articlePostsList.add(tmp);

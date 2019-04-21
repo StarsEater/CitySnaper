@@ -31,7 +31,7 @@
     android:src="@drawable/more"
     android:layout_width="30dp"
     android:layout_height="30dp"
-    android:layout_marginLeft="140dp"/>
+    android:layout_marginLeft="150dp"/>
 
 
 
@@ -70,7 +70,7 @@
      android:layout_width="20dp"
      android:layout_height="20dp"
      android:src="@drawable/bookmark"
-     android:layout_marginLeft="180dp"/>
+     android:layout_marginLeft="190dp"/>
 </LinearLayout>
  <TextView
      android:id="@+id/like_num"
@@ -88,8 +88,6 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:textSize="14sp"
-    android:lines="4"
-    android:ellipsize="end"
     android:text="布局文件中这样设置即可：
 XML/HTML代码
 android:textStyle=\\\bold

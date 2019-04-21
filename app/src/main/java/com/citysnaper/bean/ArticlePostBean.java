@@ -1,6 +1,6 @@
 package com.citysnaper.bean;
 /**首页的攻略缩略展示Bean*/
-public class ArticlePost {
+public class ArticlePostBean {
 
     public String   avatarImageUrl,
                     authorName,

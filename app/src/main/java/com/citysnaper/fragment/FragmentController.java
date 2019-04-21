@@ -54,7 +54,7 @@ public class FragmentController {
         for(Fragment fragment : fragments) {
             ft.add(containerId, fragment);
         }
-        ft.commit();
+        ft.commitAllowingStateLoss();
     }
 
     /**
@@ -67,7 +67,7 @@ public class FragmentController {
                 ft.hide(fragment);
             }
         }
-        ft.commit();
+        ft.commitAllowingStateLoss();
     }
 
     /**
@@ -79,6 +79,6 @@ public class FragmentController {
         Fragment fragment = fragments.get(position);
         FragmentTransaction ft = fm.beginTransaction();
         ft.show(fragment);
-        ft.commit();
+        ft.commitAllowingStateLoss();
     }
 }

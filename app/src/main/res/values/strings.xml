@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">CitySnaper</string>
     <string name="app_title">CitySnaper</string>
+    <string name="app_name_cn">编辑个人主页</string>
     <string name="post_num">帖子</string>
     <string name="fans_num">粉丝</string>
     <string name="concern_num">关注</string>

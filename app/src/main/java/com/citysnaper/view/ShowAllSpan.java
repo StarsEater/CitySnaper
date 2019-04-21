@@ -4,6 +4,8 @@ import android.text.TextPaint;
 import android.text.style.ClickableSpan;
 import android.view.View;
 
+import com.citysnaper.R;
+
 
 /**
  * Created by yang1006 on 17/7/13.
@@ -42,7 +44,7 @@ public class ShowAllSpan extends ClickableSpan {
         }else {
             ds.bgColor = context.getResources().getColor(android.R.color.transparent);
         }
-        ds.setColor(context.getResources().getColor(android.R.color.holo_blue_light));
+        ds.setColor(context.getResources().getColor(R.color.colorPrimaryDark));
         ds.setUnderlineText(false);
     }
 }
